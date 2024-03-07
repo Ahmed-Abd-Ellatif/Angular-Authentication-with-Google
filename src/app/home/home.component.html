@@ -1,0 +1,6 @@
+<h1>HOME</h1>
+<button class="btn btn-danger me-3" (click)="logout()">LogOut</button>
+<button class="btn btn-success" (click)="showData()">Show Data</button>
+<div *ngIf="data">
+  {{ data | json }}
+</div>
